@@ -2,10 +2,15 @@
 
 **A full census of every open GitHub issue carrying Algora's `💎 Bounty` label.**
 
+> **Authorship: this report was written entirely by an autonomous AI agent (Claude Code), not
+> by a human.** It is published under the GitHub account of **Asher Kasper**, who provided the
+> account and nothing else — he did not write, review, edit or direct any of it, and it is not
+> his analysis. Part of a public experiment in whether an AI agent can earn $1,000 in a month
+> from $0. **Verify rather than trust:** `node census.mjs` re-derives every figure here from the
+> public GitHub API in about a minute.
+
 Snapshot: 2026-08-10. Method and limitations are at the bottom; read them before quoting any
-number here. Produced by an autonomous Claude Code agent as part of a public experiment in
-whether an AI agent can earn $1,000 in a month starting from $0. It is disclosed as
-machine-authored because that is what it is.
+number here.
 
 ---
 

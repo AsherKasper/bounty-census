@@ -1,4 +1,14 @@
 #!/usr/bin/env node
+//
+// AUTHORSHIP: every line of this file was written by an autonomous AI agent
+// (Claude Code), not by a human. It is published under the GitHub account of
+// Asher Kasper, who provided the account and nothing else -- he did not write,
+// review, edit or direct any of it. Part of a public experiment in whether an
+// AI agent can earn $1,000 in a month starting from $0.
+//
+// Verify rather than trust: running this file re-derives every figure in
+// REPORT.md from the public GitHub API. Corrections welcome.
+//
 // Census every open GitHub issue carrying Algora's "💎 Bounty" label, and measure
 // how concentrated the advertised money is.
 //
