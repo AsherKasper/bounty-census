@@ -99,6 +99,30 @@ const amountOf = (issue) => {
   return m ? parseInt(m[1].replace(/,/g, ""), 10) : 0;
 };
 
+/**
+ * Reads an issue's comments to find out whether its bounty is actually still
+ * available. Returns { awarded, awardedTo, attempts }.
+ *
+ * Algora posts a distinctive "has been awarded" comment when it pays out. That
+ * comment is the only reliable public signal that the money is gone, because
+ * neither the label nor the issue state changes when it happens.
+ */
+async function bountyStatus(repo, number) {
+  const comments = await gh(`https://api.github.com/repos/${repo}/issues/${number}/comments?per_page=100`);
+  if (!Array.isArray(comments)) return { awarded: false, attempts: 0 };
+
+  let awarded = false, awardedTo = null, attempts = 0;
+  for (const c of comments) {
+    const body = c.body || "";
+    if (/has been awarded/i.test(body)) {
+      awarded = true;
+      awardedTo = (body.match(/@([A-Za-z0-9-]+)\s+has been awarded/i) || [])[1] || awardedTo;
+    }
+    if (/\/attempt\b/i.test(body)) attempts++;
+  }
+  return { awarded, awardedTo, attempts };
+}
+
 const issues = await collectBountyIssues();
 note(`\n${issues.length} open bounty issues found`);
 
@@ -121,6 +145,19 @@ for (const [name, repoIssues] of byRepo) {
   const meta = await gh(`https://api.github.com/repos/${name}`);
   if (!meta) { rejected.push({ name, n: repoIssues.length, why: "repo not found" }); continue; }
 
+  // An archived repo accepts no pull requests, so its bounties cannot be claimed
+  // by anyone, at any price. Found the hard way: the list originally surfaced a
+  // $50 bounty on tscircuit/autorouting, which is archived. Checking "recently
+  // pushed" is not enough -- a repo can be archived long after its last push.
+  if (meta.archived) {
+    rejected.push({ name, n: repoIssues.length, why: "repo is archived — PRs cannot be opened" });
+    continue;
+  }
+  if (meta.disabled) {
+    rejected.push({ name, n: repoIssues.length, why: "repo is disabled" });
+    continue;
+  }
+
   const daysSincePush = (Date.now() - Date.parse(meta.pushed_at)) / 86_400_000;
   if (meta.stargazers_count < FILTERS.MIN_STARS) {
     rejected.push({ name, n: repoIssues.length, why: `${meta.stargazers_count} stars` });
@@ -133,11 +170,27 @@ for (const [name, repoIssues] of byRepo) {
 
   for (const i of repoIssues) {
     if (i.comments > FILTERS.MAX_COMMENTS) continue;
+
+    // THE BIG ONE. An open issue carrying a bounty label does NOT mean an
+    // unclaimed bounty. Algora awards the money by commenting on the issue, and
+    // maintainers frequently never close it afterwards -- so the label, the
+    // "open" state and the dollar figure all persist indefinitely after the
+    // money is gone. Every label-based measurement of this market (including
+    // the first two versions of this very script) counts paid work as
+    // available. Found by picking the most attractive entry on the generated
+    // list and discovering it had been paid out in April 2024.
+    const status = await bountyStatus(name, i.number);
+    if (status.awarded) {
+      rejected.push({ name: `${name}#${i.number}`, n: 1, why: `bounty already awarded${status.awardedTo ? ` to ${status.awardedTo}` : ""} — issue left open` });
+      continue;
+    }
+
     kept.push({
       repo: name, stars: meta.stargazers_count, lang: meta.language || "—",
       title: i.title, url: i.html_url, amount: amountOf(i), comments: i.comments,
-      created: i.created_at.slice(0, 10),
+      created: i.created_at.slice(0, 10), attempts: status.attempts,
     });
+    await sleep(TOKEN ? 120 : 1200);
   }
   await sleep(TOKEN ? 120 : 1200);
 }

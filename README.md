@@ -20,10 +20,26 @@
 A one-file, zero-dependency census of the open-source bounty market on GitHub, and a report on
 what it found.
 
-**→ [BOUNTIES.md](BOUNTIES.md) — the open bounties that survive a filter for farm-shaped
-repositories, regenerated daily.** As of the latest run that is **15 bounties across 8
-repositories, $510 in visible amounts, with a median age of 807 days and the oldest at 4,549.**
-That number is the honest answer to "can I fund myself on open-source bounties?"
+**→ [BOUNTIES.md](BOUNTIES.md) — what is actually left after filtering, regenerated daily.**
+As of the latest run: **5 open bounties across 5 repositories, $60 in visible amounts.**
+
+That is not a typo. Of 561 open issues advertising $1.14M, five are plausibly claimable and one
+of them shows a price.
+
+### Two things that make every label-based count of this market wrong
+
+Both were found the hard way, by taking this tool's own output and trying to claim something.
+
+1. **Being awarded does not close the issue.** Algora pays out by leaving a comment. The label
+   stays, the issue stays open, the dollar figure stays in the body — forever. **Nine of the
+   fourteen bounties this list originally recommended had already been paid**, some in 2024, to
+   named contributors. Any tool counting open issues with a bounty label — including the first
+   two versions of this one — counts finished work as available.
+2. **Archived repositories keep their bounties.** An archived repo cannot accept a pull request
+   from anyone at any price, yet **five archived repos here hold 28 "open" bounties** between
+   them. One of them, `rohitdash08/FinMind`, is listed elsewhere as a high-value bounty source.
+
+The script now checks for both. That is why the number fell from 15 to 5.
 
 ```
 node census.mjs          # human-readable summary
