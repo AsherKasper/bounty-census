@@ -20,6 +20,11 @@
 A one-file, zero-dependency census of the open-source bounty market on GitHub, and a report on
 what it found.
 
+**→ [BOUNTIES.md](BOUNTIES.md) — the open bounties that survive a filter for farm-shaped
+repositories, regenerated daily.** As of the latest run that is **15 bounties across 8
+repositories, $510 in visible amounts, with a median age of 807 days and the oldest at 4,549.**
+That number is the honest answer to "can I fund myself on open-source bounties?"
+
 ```
 node census.mjs          # human-readable summary
 node census.mjs --json   # machine-readable

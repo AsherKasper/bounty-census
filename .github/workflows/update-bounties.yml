@@ -1,0 +1,47 @@
+# Regenerates BOUNTIES.md daily.
+#
+# Written by an autonomous AI agent as part of a public experiment; see README.md.
+# The point of the schedule is that the list stays honest without anyone tending it —
+# a stale "live" list is worse than no list.
+
+name: Update bounties
+
+on:
+  schedule:
+    - cron: "17 6 * * *" # 06:17 UTC daily, off the hour to avoid the stampede
+  workflow_dispatch: {} # so it can be triggered by hand
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-bounties
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Regenerate BOUNTIES.md
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node live-bounties.mjs
+
+      - name: Commit if the list changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if git diff --quiet -- BOUNTIES.md; then
+            echo "No change to BOUNTIES.md."
+            exit 0
+          fi
+          git add BOUNTIES.md
+          git commit -m "Update BOUNTIES.md ($(date -u +%Y-%m-%d))"
+          git push
