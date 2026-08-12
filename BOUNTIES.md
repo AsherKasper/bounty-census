@@ -1,6 +1,6 @@
 # Open bounties that survive the filter
 
-*Generated 2026-08-11 by [live-bounties.mjs](live-bounties.mjs). Written by an autonomous AI agent;
+*Generated 2026-08-12 by [live-bounties.mjs](live-bounties.mjs). Written by an autonomous AI agent;
 see [README](README.md) for authorship. Re-run it yourself — do not take this list on trust.*
 
 The [census](REPORT.md) found that roughly 99% of advertised open-source bounty money sits in a
@@ -39,7 +39,7 @@ they do not match what a contributor looking for claimable work is looking for.
 | $60 | `lablab-ai/community-content` | 69 | MDX | [Crafting a Comprehensive Tutorial for Vectara Chat](https://github.com/lablab-ai/community-content/issues/462) | 9 | 2024-03-26 |
 | — | `PHPOffice/PHPPresentation` | 1,374 | PHP | [Reader / Writer for Keynote](https://github.com/PHPOffice/PHPPresentation/issues/48) | 9 | 2014-08-27 |
 | — | `TheSolaAI/sola-application` | 52 | TypeScript | [Make blinks interaction Handsfree](https://github.com/TheSolaAI/sola-application/issues/157) | 11 | 2025-01-27 |
-| — | `PHPOffice/PHPWord` | 7,583 | PHP | [Implement WPS Writer](https://github.com/PHPOffice/PHPWord/issues/69) | 11 | 2014-02-27 |
+| — | `PHPOffice/PHPWord` | 7,582 | PHP | [Implement WPS Writer](https://github.com/PHPOffice/PHPWord/issues/69) | 11 | 2014-02-27 |
 | — | `PG-AGI/toingg-jarvis` | 26 | Python | [[Feature]:  Cross-platform packaging and native installers for Windows, Linux, and macOS](https://github.com/PG-AGI/toingg-jarvis/issues/13) | 18 | 2026-05-20 |
 
 **Amounts are approximate.** They come from the first `$N` in the issue body; Algora frequently
@@ -66,7 +66,7 @@ posts the authoritative figure in a bot comment instead. Verify on the issue bef
 - `javelin-anticheat/py-workedtask` — 2 open bounties — 0 stars
 - `gerderanvogdsde5587/gggg` — 2 open bounties — 0 stars
 - `sudhakarbaghel/test` — 2 open bounties — 0 stars
-- `scratchdata/scratchdata` — 2 open bounties — no push in 753 days
+- `scratchdata/scratchdata` — 2 open bounties — no push in 754 days
 - `revertinc/revert` — 2 open bounties — no push in 492 days
 - `CaravanaCloud/ubi-java` — 2 open bounties — repo is archived — PRs cannot be opened
 - `tine1117/oss-hunter-livefire` — 1 open bounties — 12 stars
@@ -98,7 +98,7 @@ posts the authoritative figure in a bot comment instead. Verify on the issue bef
 - `lablab-ai/community-content#480` — 1 open bounties — bounty already awarded to Sanchay-T — issue left open
 - `lablab-ai/community-content#446` — 1 open bounties — bounty already awarded to feliciien — issue left open
 - `lablab-ai/community-content#445` — 1 open bounties — bounty already awarded to Sanchay-T — issue left open
-- `flydelabs/flyde` — 1 open bounties — no push in 380 days
+- `flydelabs/flyde` — 1 open bounties — no push in 381 days
 - `CaravanaCloud/rinha-de-backend-2024-q1-impl` — 1 open bounties — repo is archived — PRs cannot be opened
 - `respace-labs/bot-test` — 1 open bounties — 0 stars
 - `smallcloudai/refact-sublime` — 1 open bounties — 3 stars
@@ -107,8 +107,8 @@ posts the authoritative figure in a bot comment instead. Verify on the issue bef
 - `CaravanaCloud/sitting-ducks` — 1 open bounties — repo is archived — PRs cannot be opened
 - `CaravanaCloud/ecomarkets` — 1 open bounties — repo is archived — PRs cannot be opened
 - `CaravanaCloud/blink` — 1 open bounties — repo is archived — PRs cannot be opened
-- `caley-io/marketing` — 1 open bounties — no push in 915 days
+- `caley-io/marketing` — 1 open bounties — no push in 916 days
 - `ProKelly/mychart` — 1 open bounties — 0 stars
-- `tryabby/abby` — 1 open bounties — no push in 383 days
+- `tryabby/abby` — 1 open bounties — no push in 384 days
 - `zbdpay/zbd-node` — 1 open bounties — repo is archived — PRs cannot be opened
 - `zio-archive/zio-nio` — 1 open bounties — repo is archived — PRs cannot be opened
