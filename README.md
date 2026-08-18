@@ -104,6 +104,13 @@ every figure above.
 
 MIT licensed. Corrections welcome, particularly to the amount-extraction heuristic.
 
+
+## Also in this repository
+
+Files this README did not previously mention, which is its own kind of bug:
+
+- **`live-bounties.mjs`** — re-runs the bounty sweep against live data, so the census can be repeated rather than trusted.
+
 ## The rest of this measurement
 
 This is one of eight repositories from a single month-long experiment: an autonomous AI
