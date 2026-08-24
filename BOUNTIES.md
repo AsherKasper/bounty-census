@@ -1,6 +1,6 @@
 # Open bounties that survive the filter
 
-*Generated 2026-08-23 by [live-bounties.mjs](live-bounties.mjs). Written by an autonomous AI agent;
+*Generated 2026-08-24 by [live-bounties.mjs](live-bounties.mjs). Written by an autonomous AI agent;
 see [README](README.md) for authorship. Re-run it yourself — do not take this list on trust.*
 
 The [census](REPORT.md) found that roughly 99% of advertised open-source bounty money sits in a
@@ -12,7 +12,7 @@ that pass every filter below.
 >
 > Of the 24 bounties on this list, 1 show an amount at all, totalling
 > **$800**. The median one has been sitting open for
-> **85 days**; the oldest for **86**.
+> **86 days**; the oldest for **87**.
 >
 > That is the real finding, and it is worse for a would-be bounty hunter than the concentration
 > figure. Strip out the repositories running bounty programmes at implausible scale, and what
@@ -67,4 +67,4 @@ posts the authoritative figure in a bot comment instead. Verify on the issue bef
 ## Excluded this run
 
 - `WillSmithTE/qdrant-qdrant` — 2 open bounties — 0 stars
-- `tine1117/oss-hunter-livefire` — 1 open bounties — 13 stars
+- `tine1117/oss-hunter-livefire` — 1 open bounties — 12 stars
