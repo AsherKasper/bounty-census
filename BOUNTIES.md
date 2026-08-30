@@ -1,6 +1,6 @@
 # Open bounties that survive the filter
 
-*Generated 2026-08-29 by [live-bounties.mjs](live-bounties.mjs). Written by an autonomous AI agent;
+*Generated 2026-08-30 by [live-bounties.mjs](live-bounties.mjs). Written by an autonomous AI agent;
 see [README](README.md) for authorship. Re-run it yourself — do not take this list on trust.*
 
 The [census](REPORT.md) found that roughly 99% of advertised open-source bounty money sits in a
@@ -55,7 +55,7 @@ posts the authoritative figure in a bot comment instead. Verify on the issue bef
 - `rohitdash08/FinMind` — 7 open bounties — repo is archived — PRs cannot be opened
 - `speakers-in-tech/conference-data` — 5 open bounties — 19 stars
 - `ccgjjnsvatk/fly` — 4 open bounties — 0 stars
-- `getdozer/dozer` — 4 open bounties — no push in 802 days
+- `getdozer/dozer` — 4 open bounties — no push in 803 days
 - `zio-archive/zio-jdbc` — 4 open bounties — repo is archived — PRs cannot be opened
 - `UnsafeLabs/Coolify-Rust-v4` — 3 open bounties — 0 stars
 - `ApexOpsStudio/ai-gitops-test-target` — 3 open bounties — 0 stars
@@ -66,8 +66,8 @@ posts the authoritative figure in a bot comment instead. Verify on the issue bef
 - `javelin-anticheat/py-workedtask` — 2 open bounties — 0 stars
 - `gerderanvogdsde5587/gggg` — 2 open bounties — 0 stars
 - `sudhakarbaghel/test` — 2 open bounties — 0 stars
-- `scratchdata/scratchdata` — 2 open bounties — no push in 771 days
-- `revertinc/revert` — 2 open bounties — no push in 509 days
+- `scratchdata/scratchdata` — 2 open bounties — no push in 772 days
+- `revertinc/revert` — 2 open bounties — no push in 510 days
 - `CaravanaCloud/ubi-java` — 2 open bounties — repo is archived — PRs cannot be opened
 - `tine1117/oss-hunter-livefire` — 1 open bounties — 14 stars
 - `PG-AGI/toingg-jarvis#11` — 1 open bounties — bounty already awarded to DanielRey17 — issue left open
@@ -98,7 +98,7 @@ posts the authoritative figure in a bot comment instead. Verify on the issue bef
 - `lablab-ai/community-content#480` — 1 open bounties — bounty already awarded to Sanchay-T — issue left open
 - `lablab-ai/community-content#446` — 1 open bounties — bounty already awarded to feliciien — issue left open
 - `lablab-ai/community-content#445` — 1 open bounties — bounty already awarded to Sanchay-T — issue left open
-- `flydelabs/flyde` — 1 open bounties — no push in 398 days
+- `flydelabs/flyde` — 1 open bounties — no push in 399 days
 - `CaravanaCloud/rinha-de-backend-2024-q1-impl` — 1 open bounties — repo is archived — PRs cannot be opened
 - `respace-labs/bot-test` — 1 open bounties — 0 stars
 - `smallcloudai/refact-sublime` — 1 open bounties — 3 stars
@@ -107,8 +107,8 @@ posts the authoritative figure in a bot comment instead. Verify on the issue bef
 - `CaravanaCloud/sitting-ducks` — 1 open bounties — repo is archived — PRs cannot be opened
 - `CaravanaCloud/ecomarkets` — 1 open bounties — repo is archived — PRs cannot be opened
 - `CaravanaCloud/blink` — 1 open bounties — repo is archived — PRs cannot be opened
-- `caley-io/marketing` — 1 open bounties — no push in 933 days
+- `caley-io/marketing` — 1 open bounties — no push in 934 days
 - `ProKelly/mychart` — 1 open bounties — 0 stars
-- `tryabby/abby` — 1 open bounties — no push in 401 days
+- `tryabby/abby` — 1 open bounties — no push in 402 days
 - `zbdpay/zbd-node` — 1 open bounties — repo is archived — PRs cannot be opened
 - `zio-archive/zio-nio` — 1 open bounties — repo is archived — PRs cannot be opened
