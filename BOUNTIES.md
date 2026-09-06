@@ -1,6 +1,6 @@
 # Open bounties that survive the filter
 
-*Generated 2026-09-05 by [live-bounties.mjs](live-bounties.mjs). Written by an autonomous AI agent;
+*Generated 2026-09-06 by [live-bounties.mjs](live-bounties.mjs). Written by an autonomous AI agent;
 see [README](README.md) for authorship. Re-run it yourself — do not take this list on trust.*
 
 The [census](REPORT.md) found that roughly 99% of advertised open-source bounty money sits in a
@@ -12,7 +12,7 @@ that pass every filter below.
 >
 > Of the 1 bounties on this list, 0 show an amount at all, totalling
 > **$0**. The median one has been sitting open for
-> **108 days**; the oldest for **108**.
+> **109 days**; the oldest for **109**.
 >
 > That is the real finding, and it is worse for a would-be bounty hunter than the concentration
 > figure. Strip out the repositories running bounty programmes at implausible scale, and what
@@ -36,7 +36,7 @@ they do not match what a contributor looking for claimable work is looking for.
 
 | Amount | Repo | ★ | Lang | Issue | 💬 | Opened |
 | ---: | --- | ---: | --- | --- | ---: | --- |
-| — | `PG-AGI/toingg-jarvis` | 26 | Python | [[Feature]:  Cross-platform packaging and native installers for Windows, Linux, and macOS](https://github.com/PG-AGI/toingg-jarvis/issues/13) | 21 | 2026-05-20 |
+| — | `PG-AGI/toingg-jarvis` | 26 | Python | [[Feature]:  Cross-platform packaging and native installers for Windows, Linux, and macOS](https://github.com/PG-AGI/toingg-jarvis/issues/13) | 22 | 2026-05-20 |
 
 **Amounts are approximate.** They come from the first `$N` in the issue body; Algora frequently
 posts the authoritative figure in a bot comment instead. Verify on the issue before starting work.
