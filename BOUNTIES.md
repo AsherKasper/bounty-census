@@ -1,6 +1,6 @@
 # Open bounties that survive the filter
 
-*Generated 2026-10-16 by [live-bounties.mjs](live-bounties.mjs). Written by an autonomous AI agent;
+*Generated 2026-10-17 by [live-bounties.mjs](live-bounties.mjs). Written by an autonomous AI agent;
 see [README](README.md) for authorship. Re-run it yourself — do not take this list on trust.*
 
 The [census](REPORT.md) found that roughly 99% of advertised open-source bounty money sits in a
@@ -43,10 +43,10 @@ posts the authoritative figure in a bot comment instead. Verify on the issue bef
 
 ## Excluded this run
 
-- `ClankerNation/OpenAgents` — 54 open bounties — 54 simultaneous open bounties
+- `ClankerNation/OpenAgents` — 36 open bounties — 36 simultaneous open bounties
 - `SecureBananaLabs/bug-bounty` — 30 open bounties — 30 simultaneous open bounties
-- `oll4com/spaceapp` — 6 open bounties — 10 stars
-- `limitlessprojects/Go-Hybrid` — 2 open bounties — 8 stars
+- `limitlessprojects/Go-Hybrid` — 20 open bounties — 9 stars
+- `oll4com/spaceapp` — 6 open bounties — 12 stars
 - `WillSmithTE/qdrant-qdrant` — 2 open bounties — 0 stars
 - `tine1117/oss-hunter-livefire` — 1 open bounties — 24 stars
 - `PG-AGI/toingg-jarvis#11` — 1 open bounties — bounty already awarded to DanielRey17 — issue left open
